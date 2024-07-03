@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.rtl.min.css" integrity="sha384-dpuaG1suU0eT09tx5plTaGMLBsfDLzUCCUXOY2j/LSvXYuG6Bqs43ALlhIqAJVRb" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.5.0/semantic.min.js" integrity="sha512-Xo0Jh8MsOn72LGV8kU5LsclG7SUzJsWGhXbWcYs2MAmChkQzwiW/yTQwdJ8w6UA9C6EVG18GHb/TrYpYCjyAQw==" crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.5.0/semantic.min.css" integrity="sha512-KXol4x3sVoO+8ZsWPFI/r5KBVB/ssCGB5tsv2nVOKwLg33wTFP3fmnXa47FdSVIshVTgsYk/1734xSk9aFIa4A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script src="../script.js" defer></script>
+    <script src="../seekBar_13.05/script.js" defer></script>
+    <link rel="stylesheet" href="../artistas.css">
+</head>
+<body>
+    <header>
+        <div class="ui inverted segment">
+            <div class="ui inverted secondary pointing menu">
+                <div class="logo">
+                    <a href="../index.html">
+                        <img src="../logo.png" alt="logo" id="logo">
+                        Musiqueta
+                    </a>
+                </div>
+                <div class="navbar-right">
+                    <a href="../index.html" id="home" class="active item">
+                        Home
+                    </a>
+                    <a href="../aboutus.html" id="about" target="_self" class="item">
+                        About Us
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+        
+        <main class="container-fluid">
+            <img src="../imagens_musicas/pop/beyonce/beyonce.jpg" alt="Perfil do artista" class="container-fluid">
+            <table class="table ">
+                <tbody>
+                    <tr>
+                        <td class="imagens">
+                            <img class="w-100 song" 
+                            data-src="../musicas/pop/beyonce/Beyoncé, Shakira   Beautiful Liar.mp3"
+                            data-name=" Beautiful liar" 
+                            data-artist="Beyoncé" 
+                            data-image="../imagens_musicas/pop/beyonce/beatiful liar.jpg" 
+                            onclick="playMusic('audio1')" 
+                            src="../imagens_musicas/pop/beyonce/beatiful liar.jpg"
+                            alt="Beautiful liar">
+                        </td>
+                        <td class="musicas">
+                            <h3>Beatiful Liar</h3>
+                            <h5>Beyoncé (feat. Shakira)</h5>
+                            <p>
+                                A música 'Beautiful Liar', uma colaboração entre as icônicas artistas Beyoncé e Shakira, é uma narrativa de empoderamento feminino diante da infidelidade. 
+                            </p>
+                            <audio preload="metadata"  id="audio1" src="../musicas/pop/beyonce/Beyoncé, Shakira   Beautiful Liar.mp3"></audio>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="imagens">
+                            <img class="w-100 song" 
+                            data-src="../musicas/pop/beyonce/Beyoncé   Crazy In Love (Live).mp3"
+                            data-name=" Crazy in love" 
+                            data-artist="Beyoncé" 
+                            data-image="../imagens_musicas/pop/beyonce/crazyinlove.jpg" 
+                            onclick="playMusic('audio2')" 
+                            src="../imagens_musicas/pop/beyonce/crazyinlove.jpg"
+                            alt="Crazy in love">
+                        </td>
+                        <td class="musicas">
+                            <h3>Crazy In Love</h3>
+                            <h5>Beyoncé</h5>
+                            <p>
+                                A música 'Crazy In Love', interpretada por Beyoncé e com participação de Jay-Z, é um hino de R&B que captura a intensidade e a paixão do amor recém-descoberto.
+                            </p>
+                            <audio preload="metadata"  id="audio2" src="../musicas/pop/beyonce/Beyoncé   Crazy In Love (Live).mp3"></audio>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="imagens">
+                            <img class="w-100 song" 
+                            data-src="../musicas/pop/beyonce/Beyoncé   CUFF IT (Official Lyric Audio).mp3"
+                            data-name=" Cuff it" 
+                            data-artist="Beyoncé" 
+                            data-image="../imagens_musicas/pop/beyonce/cuffit.jpg" 
+                            onclick="playMusic('audio3')" 
+                            src="../imagens_musicas/pop/beyonce/cuffit.jpg" alt="Cuff it">
+                        </td>
+                        <td class="musicas">
+                            <h3>Cuff It</h3>
+                            <h5>Beyoncé</h5>
+                            <p>
+                                A música 'CUFF IT' de Beyoncé é uma celebração vibrante da liberdade, do prazer e da autoexpressão. As letras de 'CUFF IT' falam sobre a vontade de 'bagunçar' a noite, uma metáfora para viver intensamente e sem arrependimentos
+                            </p>
+                            <audio preload="metadata"  id="audio3" src="../musicas/pop/beyonce/Beyoncé   CUFF IT (Official Lyric Audio).mp3"></audio>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="imagens">
+                            <img class="w-100 song" 
+                            data-src="../musicas/pop/beyonce/Beyoncé   Halo.mp3"
+                            data-name=" Halo" 
+                            data-artist="Beyoncé" 
+                            data-image="../imagens_musicas/pop/beyonce/halo.jpg" 
+                            onclick="playMusic('audio4')" 
+                            src="../imagens_musicas/pop/beyonce/halo.jpg" 
+                            alt="Halo">
+                        </td>
+                        <td class="musicas">
+                            <h3>Halo</h3>
+                            <h5>Beyoncé</h5>
+                            <p>
+                                A canção 'Halo', interpretada pela icônica Beyoncé, é uma poderosa balada que explora a temática do amor redentor e da vulnerabilidade emocional.
+                            </p>
+                            <audio preload="metadata"  id="audio4" src="../musicas/pop/beyonce/Beyoncé   Halo.mp3"></audio>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="imagens">
+                            <img class="w-100 song" 
+                            data-src="../musicas/pop/beyonce/Beyoncé   Single Ladies (Put a Ring on It) (Audio Version).mp3"
+                            data-name=" Single ladies" 
+                            data-artist="Beyoncé" 
+                            data-image="../imagens_musicas/pop/beyonce/singleladies.jpg" 
+                            onclick="playMusic('audio5')" 
+                            src="../imagens_musicas/pop/beyonce/singleladies.jpg" 
+                             alt="Single ladies">
+                        </td>
+                        <td class="musicas">
+                            <h3>Single Ladies</h3>
+                            <h5>Beyoncé</h5>
+                            <p>
+                                A música 'Single Ladies (Put a Ring On It)', interpretada pela icônica Beyoncé, tornou-se um hino de empoderamento feminino desde o seu lançamento em 2008.
+                            </p>
+                            <audio preload="metadata"  id="audio5" src="../musicas/pop/beyonce/Beyoncé   Single Ladies (Put a Ring on It) (Audio Version).mp3"></audio>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <div id="musicPlayer" class="music-player hidden"> 
+                <div class="controls">
+                    <div class="music-info">
+                      <img id="artistImage" src="" alt="">
+                      <div class="music-info-names">
+                          <span id="artistName"></span>
+                          <span id="songName"></span>
+                      </div>
+                    </div>
+
+                    <div class="controls-button">
+                        <button id="backBtn">
+                            <i class="step backward icon"></i>
+                        </button>
+                        <button id="playPauseBtn">
+                            <i id="play" class="pause circle large icon"></i>
+                        </button>
+                        <button id="skipBtn">
+                          <i class="step forward icon"></i>
+                        </button>
+                    </div>
+        
+                    <div class="audio-">
+                      <i class="fa-solid fa-volume-high" id="volume"></i>
+                      <input id="volumeBar" type="range" min="0" max="1" step="0.1" value="1">
+                    </div>
+                </div>
+                <div id="seekbar">
+                   <span id="currentTime">00:00</span>
+                   <input id="seekBar" type="range" min="0" value="0">
+                   <span id="totalTime">00:00</span>
+                </div>
+            </div>
+            <audio id="myAudio"></audio> 
+        </main>
+        
+        <footer class="container-fluid bg-dark">
+            <div>
+                <strong><p>Empresa</p></strong>
+                <p>Sobre</p>
+                <p>Empregos</p>
+                <p>For the Record</p>
+            </div>
+
+            <div>
+                <strong><p>Comunidade</p></strong>
+                <p>Para Artistas</p>
+                <p>Desenvolvedores</p>
+            </div>
+
+            <div>
+                <strong><p>Links Úteis</p></strong>
+                <p>Suporte</p>
+                <p>Aplicativo móvel grátis</p>
+            </div>
+
+            <div>
+                <img src="../imagens/insta_logo.jpg" alt="Instagram">
+                <img src="../imagens/x_logo.jpg" alt="X">
+                <img src="../imagens/faceb_logo.jpg" alt="Facebook">
+            </div>
+        </footer>
+
+
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

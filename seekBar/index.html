@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.5.0/semantic.min.js"
+    integrity="sha512-Xo0Jh8MsOn72LGV8kU5LsclG7SUzJsWGhXbWcYs2MAmChkQzwiW/yTQwdJ8w6UA9C6EVG18GHb/TrYpYCjyAQw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.5.0/semantic.min.css"
+    integrity="sha512-KXol4x3sVoO+8ZsWPFI/r5KBVB/ssCGB5tsv2nVOKwLg33wTFP3fmnXa47FdSVIshVTgsYk/1734xSk9aFIa4A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <!-- divs que funcionam para a barra-->
+  <div id="musicPlayer" class="music-player hidden">
+    <div class="music-info">
+      <img id="artistImage" src="" alt="">
+      <span id="artistName"></span>
+      <span id="songName"></span>
+    </div>
+
+
+    <div class="audio-controls">
+      <img id="volumeIcon" src="imagens/volume.png" alt="Volume">
+      <input id="volumeBar" type="range" min="0" max="1" step="0.1" value="1">
+    </div>
+
+    <div class="controls">
+      <div class="controls-buttons">
+        <button id="backBtn">
+          <i class="step backward icon"></i>
+        </button>
+        <button id="playPauseBtn">
+          <i id="play" class="pause circle large icon"></i>
+        </button>
+        <button id="skipBtn">
+          <i class="step forward icon"></i>
+        </button>
+      </div>
+      <input id="seekBar" type="range" min="0" value="0">
+    </div>
+
+  </div>
+  <!-- ------------------------------------------------ -->
+
+  <!-- aqui esta a lista de musica -->
+  <ul class="music-list">
+    <li class="song" data-src="../musicas/rock/beatles/The Beatles   Hey Jude.mp3" data-name="Hey Jude"
+      data-artist="The Beatles" data-image="../imagens_musicas/rock/beatles/heyjude.jpg">primera musica</li>
+    <li class="song" data-src=".mp3" data-name="" data-artist="" data-image=".jpg">segunda</li>
+  </ul>
+
+  <audio id="myAudio"></audio>
+  <script src="script.js"></script>
+</body>
+
+</html>

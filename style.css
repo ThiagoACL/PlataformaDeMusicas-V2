@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+@font-face {
+    font-family: 'musicalina' ;
+    src: url(fonte/musicalina.ttf) format(truetype),
+    url(fonte/musicalina.ttf) format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+
+body{
+    font-family: 'Inter', sans-serif;
+    background-color: black;
+}
+
+.container{
+    padding: 70px 0;
+}
+
+p{
+    color: #444;
+    font-size: 14px;
+}
+
+/*Barra de Navegação*/
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+header .ui.inverted.segment {
+    width: 100%;
+}
+
+header .ui.inverted.secondary.pointing.menu {
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 100px;
+}
+
+header .ui.inverted.secondary.pointing.menu .navbar-right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+
+}
+
+header .ui.inverted.secondary.pointing.menu .logo a {
+    display: flex;
+    align-items: center;
+    font-family: 'musicalina', sans-serif;
+    font-size: 2.7em;
+    gap: 0.5rem;
+    text-decoration: none;
+    color: white;
+}
+
+header .ui.inverted.secondary.pointing.menu #logo{
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    margin-right: 10px;
+}
+
+
+/*Principal*/
+
+main{
+    margin-top: 70px;
+}
+/* 
+main > div:last-child{
+    margin-bottom: 20rem;
+} */
+
+.container-images .topbar{
+    width: 100%;
+    /* background-color: #FF5757; */
+    color: white;
+    padding: 3px;
+    text-shadow: 1px 1px 2px black;
+}
+
+.container-images .topbar h4:hover {
+    text-decoration: underline;
+}
+
+.container-images .imagens{
+    display: flex;
+    height: 17rem;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-grow: 1;
+}
+
+.container-images .imagens .artist {
+    background-color: black;
+    height: 90%;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: 900;
+    border-radius: 10px;
+    transition: 0.1s ease;
+}
+.container-images .imagens .artist p {
+    cursor: pointer;
+    color: white;
+}
+
+.container-images .imagens .artist:hover {
+    background-color: rgba(255, 255, 255, 0.068);
+}
+
+.container-images .imagens .artist:hover ~ a img {
+    transform: scale(1);
+}
+
+.container-images .imagens .artist a img{
+    border-radius: 15px;
+    margin-bottom: 10px;
+    height: 170px;
+    width: 170px;
+    box-shadow: 1px 2px 2px black;
+}
+
+.imagens a{
+    text-decoration: none;
+}
+
+/*Rodapé*/
+
+footer{
+    display: flex;
+    justify-content: space-around;
+    height: 100px;
+    width: auto;
+    color: white;
+}
+
+footer > div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-weight: 900;
+}

@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.rtl.min.css" integrity="sha384-dpuaG1suU0eT09tx5plTaGMLBsfDLzUCCUXOY2j/LSvXYuG6Bqs43ALlhIqAJVRb" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.5.0/semantic.min.js" integrity="sha512-Xo0Jh8MsOn72LGV8kU5LsclG7SUzJsWGhXbWcYs2MAmChkQzwiW/yTQwdJ8w6UA9C6EVG18GHb/TrYpYCjyAQw==" crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.5.0/semantic.min.css" integrity="sha512-KXol4x3sVoO+8ZsWPFI/r5KBVB/ssCGB5tsv2nVOKwLg33wTFP3fmnXa47FdSVIshVTgsYk/1734xSk9aFIa4A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Script -->
+    <script src="../script.js" defer></script>
+    <link rel="stylesheet" href="../artistas.css">
+</head>
+<body>
+    <header>
+        <div class="ui inverted segment">
+            <div class="ui inverted secondary pointing menu">
+                <div class="logo">
+                    <a href="../index.html">
+                        <img src="../logo.png" alt="logo" id="logo">
+                        Musiqueta
+                    </a>
+                </div>
+                <div class="navbar-right">
+                    <a href="../index.html" id="home" class="active item">
+                        Home
+                    </a>
+                    <a href="../aboutus.html" id="about" target="_self" class="item">
+                        About Us
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+        
+        <main class="container-fluid">
+            <img src="../imagens_musicas/rock/beatles/beatles_capa.png" alt="Perfil do artista" class="container-fluid">
+            <table class="table">
+                <tbody>
+                    <tr>
+                        <td class="imagens">
+                            <img class="w-100 song" 
+                            data-src="../musicas/rock/beatles/The Beatles   Hey Jude.mp3"
+                            data-name="Hey Jude" 
+                            data-artist="The Beattles" 
+                            data-image="../imagens_musicas/rock/beatles/heyjude.jpg"
+                            src="../imagens_musicas/rock/beatles/heyjude.jpg" alt="Hey Jude">
+                        </td>
+                        <td class="musicas">
+                            <h3>Hey Jude</h3>
+                            <h5>The Beatles</h5>
+                            <p>Aclamada mundialmente, Hey Jude surgiu na cabeça de McCartney durante uma viagem de carro, na qual ele iria visitar Julian e Cynthia Lennon. Na época, John havia se separado da esposa e já estava vivendo com Yoko Ono.</p>
+                            <audio preload="metadata"  id="audio1" src="../musicas/rock/beatles/The Beatles   Hey Jude.mp3">
+                            </audio>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="imagens">
+                            <img class="w-100 song" 
+                            data-src="../musicas/rock/beatles/Let It Be (Remastered 2009).mp3"
+                            data-name="Let it be" 
+                            data-artist="The Beattles" 
+                            data-image="../imagens_musicas/rock/beatles/letitbe.jpg"
+                            src="../imagens_musicas/rock/beatles/letitbe.jpg" alt="Let it be">
+                        </td>
+                        <td class="musicas">
+                            <h3>Let It Be</h3>
+                            <h5>The Beatles</h5>
+                            <p>Paul explicou que, durante os anos 60, teve um sonho com a mãe, que já havia falecido. Foi o que inspirou a composição da música, que se tornaria um dos maiores sucessos do grupo.</p>
+                            <audio preload="metadata"  id="audio2"  src="../musicas/rock/beatles/Let It Be (Remastered 2009).mp3" >
+                                
+                        </audio>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="imagens">
+                            <img class="w-100 song" 
+                            data-src="../musicas/rock/beatles/The Beatles   Here Comes The Sun (2019 Mix).mp3"
+                            data-name="Here Comes The Sun" 
+                            data-artist="The Beattles" 
+                            data-image="../imagens_musicas/rock/beatles/herecomesthesun.jpg"
+                            onclick="playMusic('audio3')" 
+                            src="../imagens_musicas/rock/beatles/herecomesthesun.jpg"
+                            alt="Here comes the sun">
+                        </td>
+                        <td class="musicas">
+                            <h3>Here Comes The Sun</h3>
+                            <h5>The Beatles</h5>
+                            <p>Segundo George, foi "composta numa manhã ensolarada" na mansão de Eric Clapton. Como em "If I Needed Someone", outra composição dele, um solo de guitarra soa durante toda a música. É uma das canções mais famosas e regravadas dos Beatles, já ganhando até versão orquestrada de flautas.</p>
+                            <audio preload="metadata"  id="audio3" src="../musicas/rock/beatles/The Beatles   Here Comes The Sun (2019 Mix).mp3">       
+                        </audio>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="imagens">
+                            <img class="w-100 song" 
+                            data-src="../musicas/rock/beatles/The Beatles   Don't Let Me Down.mp3"
+                            data-name="Don't let me down" 
+                            data-artist="The Beattles" 
+                            data-image="../imagens_musicas/rock/beatles/dontletmedown.jpg"
+                            onclick="playMusic('audio4')" 
+                            src="../imagens_musicas/rock/beatles/dontletmedown.jpg" alt="Don't let me down">
+                        </td>
+                        <td class="musicas">
+                            <h3>Don't Let Me Down</h3>
+                            <h5>The Beatles</h5>
+                            <p>John Lennon dedicou essa música para Yoko Ono. Foi a primeira música que ele escreveu para Yoko, com quem se casou em 20 de março de 1969. Lançado como o lado B de “Get Back”, é uma música liricamente simples e totalmente inspirada em sua paixão por Ono.</p>
+                            <audio preload="metadata"  id="audio4" src="../musicas/rock/beatles/The Beatles   Don't Let Me Down.mp3"> 
+                        </audio>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="imagens">
+                            <img class="w-100 song" 
+                            data-src="../musicas/rock/beatles/Twist And Shout (Remastered 2009).mp3"
+                            data-name="Twist and Shout" 
+                            data-artist="The Beattles" 
+                            data-image="../imagens_musicas/rock/beatles/TwistandShout.gif"
+                            onclick="playMusic('audio5')" 
+                            src="../imagens_musicas/rock/beatles/TwistandShout.gif"
+                             alt="Twist and Shout">
+                        </td>
+                        <td class="musicas">
+                            <h3>Twist And Shout</h3>
+                            <h5>The Beatles</h5>
+                            <p>A música evoca a imagem de jovens dançando o twist, um movimento de dança popular naquela época, que simbolizava a quebra de convenções e a busca por diversão.</p>
+                            <audio preload="metadata" id="audio5" src="../musicas/rock/beatles/Twist And Shout (Remastered 2009).mp3">
+                        </audio>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <div id="musicPlayer" class="music-player hidden"> 
+                <div class="controls">
+                    <div class="music-info">
+                      <img id="artistImage" src="" alt="">
+                      <div class="music-info-names">
+                          <span id="artistName"></span>
+                          <span id="songName"></span>
+                      </div>
+                    </div>
+
+                    <div class="controls-button">
+                        <button id="backBtn">
+                            <i class="step backward icon"></i>
+                        </button>
+                        <button id="playPauseBtn">
+                            <i id="play" class="pause circle large icon"></i>
+                        </button>
+                        <button id="skipBtn">
+                          <i class="step forward icon"></i>
+                        </button>
+                    </div>
+        
+                    <div class="audio-">
+                      <i class="fa-solid fa-volume-high" id="volume"></i>
+                      <input id="volumeBar" type="range" min="0" max="1" step="0.1" value="1">
+                    </div>
+                </div>
+                <div id="seekbar">
+                   <span id="currentTime">00:00</span>
+                   <input id="seekBar" type="range" min="0" value="0">
+                   <span id="totalTime">00:00</span>
+                </div>
+            </div>
+    
+            <audio id="myAudio"></audio>
+        </main>
+        
+        <footer class="container-fluid bg-dark">
+            <div>
+                <strong><p>Empresa</p></strong>
+                <p>Sobre</p>
+                <p>Empregos</p>
+                <p>For the Record</p>
+            </div>
+
+            <div>
+                <strong><p>Comunidade</p></strong>
+                <p>Para Artistas</p>
+                <p>Desenvolvedores</p>
+            </div>
+
+            <div>
+                <strong><p>Links Úteis</p></strong>
+                <p>Suporte</p>
+                <p>Aplicativo móvel grátis</p>
+            </div>
+
+            <div>
+                <img src="../imagens/insta_logo.jpg" alt="Instagram">
+                <img src="../imagens/x_logo.jpg" alt="X">
+                <img src="../imagens/faceb_logo.jpg" alt="Facebook">
+            </div>
+        </footer>
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

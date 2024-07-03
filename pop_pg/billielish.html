@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.rtl.min.css" integrity="sha384-dpuaG1suU0eT09tx5plTaGMLBsfDLzUCCUXOY2j/LSvXYuG6Bqs43ALlhIqAJVRb" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.5.0/semantic.min.js" integrity="sha512-Xo0Jh8MsOn72LGV8kU5LsclG7SUzJsWGhXbWcYs2MAmChkQzwiW/yTQwdJ8w6UA9C6EVG18GHb/TrYpYCjyAQw==" crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.5.0/semantic.min.css" integrity="sha512-KXol4x3sVoO+8ZsWPFI/r5KBVB/ssCGB5tsv2nVOKwLg33wTFP3fmnXa47FdSVIshVTgsYk/1734xSk9aFIa4A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script src="../script.js" defer></script>
+    <script src="../seekBar_13.05/script.js" defer></script>
+    <link rel="stylesheet" href="../artistas.css">
+</head>
+<body>
+    <header>
+        <div class="ui inverted segment">
+            <div class="ui inverted secondary pointing menu">
+                <div class="logo">
+                    <a href="../index.html">
+                        <img src="../logo.png" alt="logo" id="logo">
+                        Musiqueta
+                    </a>
+                </div>
+                <div class="navbar-right">
+                    <a href="../index.html" id="home" class="active item">
+                        Home
+                    </a>
+                    <a href="../aboutus.html" id="about" target="_self" class="item">
+                        About Us
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+        
+        <main class="container-fluid">
+            <img src="../imagens_musicas/pop/billie eilish/billie.jpg" alt="Perfil do artista" class="container-fluid">
+            <table class="table ">
+                <tbody>
+                    <tr>
+                        <td class="imagens">
+                            <img class="w-100 song" 
+                            data-src="../musicas/pop/billie eilish/Billie Eilish   Bored (Official Music Audio).mp3"
+                            data-name="Bored" 
+                            data-artist="Billie Elish" 
+                            data-image="../imagens_musicas/pop/billie eilish/bored.png" 
+                            onclick="playMusic('audio1')" 
+                            src="../imagens_musicas/pop/billie eilish/bored.png" alt="Bored">
+                        </td>
+                        <td class="musicas">
+                            <h3>Bored</h3>
+                            <h5>Billie Elish</h5>
+                            <p>
+                                A música 'Bored', interpretada pela artista norte-americana Billie Eilish, é uma expressão melancólica e introspectiva que aborda sentimentos de desilusão e busca por liberdade emocional.
+                            </p>
+                            <audio preload="metadata"  id="audio1" src="../musicas/pop/billie eilish/Billie Eilish   Bored (Official Music Audio).mp3"></audio>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="imagens">
+                            <img class="w-100 song" 
+                            data-src="../musicas/pop/billie eilish/Billie Eilish, Khalid   lovely (Official Music Audio)[1].mp3"
+                            data-name="Lonely" 
+                            data-artist="Billie Elish" 
+                            data-image="../imagens_musicas/pop/billie eilish/lovely.jpg" 
+                            onclick="playMusic('audio2')" 
+                            src="../imagens_musicas/pop/billie eilish/lovely.jpg" alt="Lovely">
+                        </td>
+                        <td class="musicas">
+                            <h3>Lovely</h3>
+                            <h5>Billie Elish (feat. Khalid)</h5>
+                            <p>
+                                A música 'lovely', uma colaboração entre Billie Eilish e Khalid, é uma expressão melancólica e introspectiva que aborda sentimentos de aprisionamento e a busca por liberdade emocional.
+                            </p>
+                            <audio preload="metadata"  id="audio2" src="../musicas/pop/billie eilish/Billie Eilish, Khalid   lovely (Official Music Audio)[1].mp3"></audio>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                        <img class="w-100 song" 
+                        data-src="../musicas/pop/billie eilish/Billie Eilish   when the party's over (Official Music Audio).mp3"
+                        data-name="When the party's over" 
+                        data-artist="Billie Elish" 
+                        data-image="../imagens_musicas/pop/billie eilish/whenthepartysover.jpg" 
+                        onclick="playMusic('audio3')" 
+                        src="../imagens_musicas/pop/billie eilish/whenthepartysover.jpg"
+                        alt="When the partys over">
+                        </td>
+                        <td class="musicas">
+                            <h3>When The Party's Over</h3>
+                            <h5>Billie Elish</h5>
+                            <p>
+                                A canção 'when the party's over' de Billie Eilish é uma expressão melancólica e introspectiva que aborda temas como despedida, autopercepção e a complexidade das relações interpessoais.
+                            </p>
+                            <audio preload="metadata"  id="audio3" src="../musicas/pop/billie eilish/Billie Eilish   when the party's over (Official Music Audio).mp3"></audio>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="imagens">
+                            <img class="w-100 song" 
+                            data-src="../musicas/pop/billie eilish/Billie Eilish   you should see me in a crown (Official Audio By Takashi Murakami).mp3"
+                            data-name="You should see me in a crown" 
+                            data-artist="Billie Elish" 
+                            data-image="../imagens_musicas/pop/billie eilish/youshouldseemeinacrown.jpg" 
+                            onclick="playMusic('audio4')" 
+                            src="../imagens_musicas/pop/billie eilish/youshouldseemeinacrown.jpg" alt="You should see me in a crown">
+                        </td>
+                        <td class="musicas">
+                            <h3>You Should See Me In A Crown</h3>
+                            <h5>Billie Elish</h5>
+                            <p>
+                                A música 'you should see me in a crown' de Billie Eilish é uma poderosa declaração de autoconfiança e ambição. Lançada em 2018, a canção faz parte do álbum 'When We All Fall Asleep, Where Do We Go?', que consolidou a artista como uma das vozes mais inovadoras e expressivas da música contemporânea.
+                            </p>
+                            <audio preload="metadata"  id="audio5" src="../musicas/pop/billie eilish/Billie Eilish   you should see me in a crown (Official Audio By Takashi Murakami).mp3"></audio>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <div id="musicPlayer" class="music-player hidden"> 
+                <div class="controls">
+                    <div class="music-info">
+                      <img id="artistImage" src="" alt="">
+                      <div class="music-info-names">
+                          <span id="artistName"></span>
+                          <span id="songName"></span>
+                      </div>
+                    </div>
+
+                    <div class="controls-button">
+                        <button id="backBtn">
+                            <i class="step backward icon"></i>
+                        </button>
+                        <button id="playPauseBtn">
+                            <i id="play" class="pause circle large icon"></i>
+                        </button>
+                        <button id="skipBtn">
+                          <i class="step forward icon"></i>
+                        </button>
+                    </div>
+        
+                    <div class="audio-">
+                      <i class="fa-solid fa-volume-high" id="volume"></i>
+                      <input id="volumeBar" type="range" min="0" max="1" step="0.1" value="1">
+                    </div>
+                </div>
+                <div id="seekbar">
+                   <span id="currentTime">00:00</span>
+                   <input id="seekBar" type="range" min="0" value="0">
+                   <span id="totalTime">00:00</span>
+                </div>
+            </div>
+    
+            <audio id="myAudio"></audio> 
+        </main>
+        
+        <footer class="container-fluid bg-dark">
+            <div>
+                <strong><p>Empresa</p></strong>
+                <p>Sobre</p>
+                <p>Empregos</p>
+                <p>For the Record</p>
+            </div>
+
+            <div>
+                <strong><p>Comunidade</p></strong>
+                <p>Para Artistas</p>
+                <p>Desenvolvedores</p>
+            </div>
+
+            <div>
+                <strong><p>Links Úteis</p></strong>
+                <p>Suporte</p>
+                <p>Aplicativo móvel grátis</p>
+            </div>
+
+            <div>
+                <img src="../imagens/insta_logo.jpg" alt="Instagram">
+                <img src="../imagens/x_logo.jpg" alt="X">
+                <img src="../imagens/faceb_logo.jpg" alt="Facebook">
+            </div>
+        </footer>
+
+
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

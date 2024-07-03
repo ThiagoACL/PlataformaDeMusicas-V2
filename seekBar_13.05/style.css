@@ -1,0 +1,91 @@
+.music-player {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #010101;
+    color: white;
+    padding: 10px;
+    box-sizing: border-box;
+    transition: bottom 0.3s ease; /* Adiciona uma transição suave */
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  .music-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .music-info img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    border-radius: 5px;
+  }
+
+
+  .controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #playPauseBtn,#skipBtn, #backBtn {
+    padding: 5px 10px;
+    font-size: 20px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    background-color: rgb(19, 19, 19);
+    color: white;
+    cursor: pointer;
+  }
+
+  #currentTime, #totalTime {
+    margin: 0 10px;
+  }
+
+  #volumeIcon {
+    width: 30px;
+  }
+
+  #backBtn{
+    margin-left: 30%;
+  }
+  
+  #skipBtn{
+    margin-right: 30%;
+  }
+
+  div.audio-controls > i{
+    color: white;
+    cursor: pointer;
+  }
+
+  div#seekbar{
+    display: flex;
+  }
+  #seekBar {
+    flex: 1;
+  }
+
+  @media screen and (max-width: 768px){
+
+    .music-info img {
+      padding-left: 10px;
+    }
+
+    #backBtn{
+      margin-left: 10%;
+    }
+    
+    #skipBtn{
+      margin-right: 10%;
+    }
+  }
+
+  
